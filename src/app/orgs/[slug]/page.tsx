@@ -5,6 +5,7 @@ import { createCaller } from "~/server/api/root";
 import { createTRPCContext } from "~/server/api/trpc";
 import { headers } from "next/headers";
 import { NewProjectForm } from "~/components/NewProjectForm";
+import { SignOutButton } from "~/components/SignOutButton";
 
 export default async function OrgPage({ params }: { params: Promise<{ slug: string }> }) {
   const session = await auth();
@@ -31,9 +32,7 @@ export default async function OrgPage({ params }: { params: Promise<{ slug: stri
         </div>
         <div className="flex items-center gap-5">
           <span className="text-xs text-[rgba(255,255,255,0.3)]">{session.user.name}</span>
-          <form action="/api/auth/signout" method="post">
-            <button className="text-xs text-[var(--slr-muted)] hover:text-[var(--slr-ink)] transition-colors">Sign out</button>
-          </form>
+          <SignOutButton />
         </div>
       </header>
 
