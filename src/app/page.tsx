@@ -51,7 +51,7 @@ export default async function Home() {
           </div>
           <span className="font-semibold text-[var(--slr-ink)] tracking-tight">EasySLR</span>
         </div>
-        <a href="/api/auth/signin/github" className="text-sm text-[var(--slr-muted)] hover:text-[var(--slr-ink)] transition-colors">
+        <a href="/signin" className="text-sm text-[var(--slr-muted)] hover:text-[var(--slr-ink)] transition-colors">
           Sign in →
         </a>
       </nav>
