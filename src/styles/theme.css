@@ -1,0 +1,146 @@
+/*
+ * ╔══════════════════════════════════════════════════════════════════╗
+ * ║  EASYLSR — THEME                                                 ║
+ * ║  Edit this file to change the entire color scheme.               ║
+ * ║  Everything else references these variables — nothing else       ║
+ * ║  needs to change.                                                 ║
+ * ╚══════════════════════════════════════════════════════════════════╝
+ *
+ * Current theme: "Scholar" — Deep teal-navy + warm academic gold
+ * Try swapping to one of the alternatives at the bottom of this file.
+ */
+
+:root {
+  /* ── Page layers ─────────────────────────────────────────────────
+   * Three depth levels: background → surface → card
+   * Background  = the page itself
+   * Surface     = panels, nav, article table rows
+   * Card        = inputs, inner elements, code pills               */
+  --slr-bg:      #1A2B35;
+  --slr-surface: #1F3340;
+  --slr-card:    #243848;
+
+  /* ── Border ──────────────────────────────────────────────────────
+   * Subtle white-alpha used on all dividers and card borders        */
+  --slr-border:       rgba(255, 255, 255, 0.07);
+  --slr-border-light: rgba(255, 255, 255, 0.04);
+
+  /* ── Accent (primary brand color) ───────────────────────────────
+   * Used for: logo, CTAs, active states, headings                   */
+  --slr-gold:       #C9A870;
+  --slr-gold-hover: #D4B880;
+  --slr-gold-dim:   rgba(201, 168, 112, 0.10);
+
+  /* ── Typography ──────────────────────────────────────────────────
+   * ink   = primary text (headings, article titles)
+   * muted = secondary text (labels, authors, journal names)
+   * dim   = tertiary text (placeholders, PMID pills, timestamps)   */
+  --slr-ink:   #E8E3D8;
+  --slr-muted: #7A9CB8;
+  --slr-dim:   #4B6478;
+
+  /* ── Decisions ───────────────────────────────────────────────────
+   * These three are the core workflow colors — they appear as
+   * badges, left-border strips, and decision button fills.          */
+  --slr-include: #34D399;   /* Emerald  — Include */
+  --slr-exclude: #F87171;   /* Rose     — Exclude */
+  --slr-maybe:   #FBBF24;   /* Amber    — Maybe   */
+}
+
+
+/* ════════════════════════════════════════════════════════════════════
+ * ALTERNATIVE THEMES — uncomment one block and comment out the :root
+ * above to switch the entire app color scheme instantly.
+ * ════════════════════════════════════════════════════════════════════
+
+── "Scholar" — Deep teal-navy + warm academic gold (original) ───────
+:root {
+  --slr-bg:           #1A2B35;
+  --slr-surface:      #1F3340;
+  --slr-card:         #243848;
+  --slr-border:       rgba(255, 255, 255, 0.07);
+  --slr-border-light: rgba(255, 255, 255, 0.04);
+  --slr-gold:         #C9A870;
+  --slr-gold-hover:   #D4B880;
+  --slr-gold-dim:     rgba(201, 168, 112, 0.10);
+  --slr-ink:          #E8E3D8;
+  --slr-muted:        #7A9CB8;
+  --slr-dim:          #4B6478;
+  --slr-include:      #34D399;
+  --slr-exclude:      #F87171;
+  --slr-maybe:        #FBBF24;
+}
+
+── "Crimson" — Near-black + deep red ────────────────────────────────
+:root {
+  --slr-bg:           #110D0D;
+  --slr-surface:      #1A1414;
+  --slr-card:         #221A1A;
+  --slr-border:       rgba(255, 255, 255, 0.07);
+  --slr-border-light: rgba(255, 255, 255, 0.04);
+  --slr-gold:         #C9A870;
+  --slr-gold-hover:   #D4B880;
+  --slr-gold-dim:     rgba(201, 168, 112, 0.10);
+  --slr-ink:          #E8E3D8;
+  --slr-muted:        #7A9CB8;
+  --slr-dim:          #4B6478;
+  --slr-include:      #34D399;
+  --slr-exclude:      #F87171;
+  --slr-maybe:        #FBBF24;
+}
+
+── "Midnight Slate" — dark charcoal + electric violet ──────────────
+:root {
+  --slr-bg:           #0F0F14;
+  --slr-surface:      #16161F;
+  --slr-card:         #1C1C2A;
+  --slr-border:       rgba(255, 255, 255, 0.07);
+  --slr-border-light: rgba(255, 255, 255, 0.03);
+  --slr-gold:         #A78BFA;
+  --slr-gold-hover:   #C4B5FD;
+  --slr-gold-dim:     rgba(167, 139, 250, 0.10);
+  --slr-ink:          #F1EFF8;
+  --slr-muted:        #8B8BA8;
+  --slr-dim:          #4A4A68;
+  --slr-include:      #34D399;
+  --slr-exclude:      #F87171;
+  --slr-maybe:        #FBBF24;
+}
+
+── "Forest" — deep green + warm cream (like MilkTrack) ─────────────
+:root {
+  --slr-bg:           #1C2B1E;
+  --slr-surface:      #223325;
+  --slr-card:         #283D2B;
+  --slr-border:       rgba(255, 255, 255, 0.07);
+  --slr-border-light: rgba(255, 255, 255, 0.04);
+  --slr-gold:         #D4A85C;
+  --slr-gold-hover:   #E0BB76;
+  --slr-gold-dim:     rgba(212, 168, 92, 0.10);
+  --slr-ink:          #EDE8DF;
+  --slr-muted:        #8EA88F;
+  --slr-dim:          #4E6850;
+  --slr-include:      #4ADE80;
+  --slr-exclude:      #F87171;
+  --slr-maybe:        #FBBF24;
+}
+
+── "Warm Paper" — light mode, warm off-white + deep navy ────────────
+:root {
+  --slr-bg:           #F7F6F2;
+  --slr-surface:      #FFFFFF;
+  --slr-card:         #F0EFE9;
+  --slr-border:       rgba(0, 0, 0, 0.07);
+  --slr-border-light: rgba(0, 0, 0, 0.04);
+  --slr-gold:         #1E3A5F;
+  --slr-gold-hover:   #2A4F80;
+  --slr-gold-dim:     rgba(30, 58, 95, 0.08);
+  --slr-ink:          #1C1C1A;
+  --slr-muted:        #6B7280;
+  --slr-dim:          #9CA3AF;
+  --slr-include:      #059669;
+  --slr-exclude:      #DC2626;
+  --slr-maybe:        #D97706;
+}
+
+*/
